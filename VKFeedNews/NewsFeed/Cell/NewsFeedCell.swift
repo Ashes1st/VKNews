@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+class NewsFeedCell: UITableViewCell {
+    
+    static let reuseId = "NewsFeedCell"
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+}

@@ -1,7 +1,45 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mcu-6H-Ry8">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--News Feed View Controller-->
+        <scene sceneID="Cvv-HS-oDB">
+            <objects>
+                <viewController id="mcu-6H-Ry8" customClass="NewsFeedViewController" customModule="VKFeedNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4W0-Yf-3AS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eLY-Pe-JCV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mcu-6H-Ry8" id="bk4-3w-rTe"/>
+                                    <outlet property="delegate" destination="mcu-6H-Ry8" id="VVi-l9-AqU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="21B-fg-8mA" firstAttribute="bottom" secondItem="eLY-Pe-JCV" secondAttribute="bottom" id="0xH-TO-gKm"/>
+                            <constraint firstItem="21B-fg-8mA" firstAttribute="trailing" secondItem="eLY-Pe-JCV" secondAttribute="trailing" id="FAe-hR-E6o"/>
+                            <constraint firstItem="eLY-Pe-JCV" firstAttribute="leading" secondItem="21B-fg-8mA" secondAttribute="leading" id="e8q-h7-SA4"/>
+                            <constraint firstItem="eLY-Pe-JCV" firstAttribute="top" secondItem="21B-fg-8mA" secondAttribute="top" id="kxs-2S-uA8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="21B-fg-8mA"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="eLY-Pe-JCV" id="xin-ah-809"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiZ-0G-GnP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53.600000000000001" y="146.17691154422789"/>
+        </scene>
+    </scenes>
 </document>
