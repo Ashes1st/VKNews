@@ -13,6 +13,11 @@
 		1F35B54623DC9E3F000A013D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35B54523DC9E3F000A013D /* AuthService.swift */; };
 		1F4EB51823DCA21500C50E64 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4EB51723DCA21500C50E64 /* AuthViewController.swift */; };
 		1F4EB51A23DCA23C00C50E64 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4EB51923DCA23C00C50E64 /* AuthViewController.storyboard */; };
+		1F9E763823DCA75500A82848 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E763723DCA75500A82848 /* FeedViewController.swift */; };
+		1F9E763A23DCA76500A82848 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9E763923DCA76500A82848 /* FeedViewController.storyboard */; };
+		1F9E763D23DCA79300A82848 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E763C23DCA79300A82848 /* UIViewController + Storyboard.swift */; };
+		1F9E763F23DCAD6000A82848 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E763E23DCAD6000A82848 /* NetworkService.swift */; };
+		1F9E764123DCAE5600A82848 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E764023DCAE5600A82848 /* API.swift */; };
 		651B90A65F12F78FCD0F93CC /* Pods_VKFeedNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F5494B7E5F60546C7C6A60 /* Pods_VKFeedNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		1F35B54523DC9E3F000A013D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		1F4EB51723DCA21500C50E64 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		1F4EB51923DCA23C00C50E64 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		1F9E763723DCA75500A82848 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		1F9E763923DCA76500A82848 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		1F9E763C23DCA79300A82848 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
+		1F9E763E23DCAD6000A82848 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1F9E764023DCAE5600A82848 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		46F5494B7E5F60546C7C6A60 /* Pods_VKFeedNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKFeedNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D950F41D5F1187A2B70421 /* Pods-VKFeedNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKFeedNews.debug.xcconfig"; path = "Target Support Files/Pods-VKFeedNews/Pods-VKFeedNews.debug.xcconfig"; sourceTree = "<group>"; };
 		8E9C5696980F00BB4225A288 /* Pods-VKFeedNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKFeedNews.release.xcconfig"; path = "Target Support Files/Pods-VKFeedNews/Pods-VKFeedNews.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,8 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				1F35B53123DC9D34000A013D /* AppDelegate.swift */,
+				1F9E763623DCA74500A82848 /* Feed */,
 				1F4EB51B23DCA26700C50E64 /* Auth */,
 				1F35B54723DC9E5F000A013D /* Services */,
+				1F9E763B23DCA78100A82848 /* Helpers */,
 				1F35B53A23DC9D36000A013D /* Assets.xcassets */,
 				1F35B53C23DC9D36000A013D /* LaunchScreen.storyboard */,
 				1F35B53F23DC9D36000A013D /* Info.plist */,
@@ -94,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				1F35B54523DC9E3F000A013D /* AuthService.swift */,
+				1F9E763E23DCAD6000A82848 /* NetworkService.swift */,
+				1F9E764023DCAE5600A82848 /* API.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -105,6 +119,23 @@
 				1F4EB51923DCA23C00C50E64 /* AuthViewController.storyboard */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		1F9E763623DCA74500A82848 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1F9E763723DCA75500A82848 /* FeedViewController.swift */,
+				1F9E763923DCA76500A82848 /* FeedViewController.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		1F9E763B23DCA78100A82848 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1F9E763C23DCA79300A82848 /* UIViewController + Storyboard.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +201,7 @@
 				1F35B53E23DC9D36000A013D /* LaunchScreen.storyboard in Resources */,
 				1F4EB51A23DCA23C00C50E64 /* AuthViewController.storyboard in Resources */,
 				1F35B53B23DC9D36000A013D /* Assets.xcassets in Resources */,
+				1F9E763A23DCA76500A82848 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +255,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F35B54623DC9E3F000A013D /* AuthService.swift in Sources */,
+				1F9E763D23DCA79300A82848 /* UIViewController + Storyboard.swift in Sources */,
 				1F35B53223DC9D34000A013D /* AppDelegate.swift in Sources */,
+				1F9E763823DCA75500A82848 /* FeedViewController.swift in Sources */,
+				1F9E763F23DCAD6000A82848 /* NetworkService.swift in Sources */,
 				1F4EB51823DCA21500C50E64 /* AuthViewController.swift in Sources */,
+				1F9E764123DCAE5600A82848 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

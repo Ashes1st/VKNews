@@ -15,12 +15,11 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        authService = AuthService()
+        authService = AppDelegate.shared().authService
     }
     
 
     @IBAction func signInTouch() {
-        print("123")
         authService.wakeUpSession()
     }
 
