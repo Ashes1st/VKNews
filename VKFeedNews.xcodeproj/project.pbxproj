@@ -13,8 +13,6 @@
 		1F35B54623DC9E3F000A013D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35B54523DC9E3F000A013D /* AuthService.swift */; };
 		1F4EB51823DCA21500C50E64 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4EB51723DCA21500C50E64 /* AuthViewController.swift */; };
 		1F4EB51A23DCA23C00C50E64 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4EB51923DCA23C00C50E64 /* AuthViewController.storyboard */; };
-		1F9E763823DCA75500A82848 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E763723DCA75500A82848 /* FeedViewController.swift */; };
-		1F9E763A23DCA76500A82848 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9E763923DCA76500A82848 /* FeedViewController.storyboard */; };
 		1F9E763D23DCA79300A82848 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E763C23DCA79300A82848 /* UIViewController + Storyboard.swift */; };
 		1F9E763F23DCAD6000A82848 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E763E23DCAD6000A82848 /* NetworkService.swift */; };
 		1F9E764123DCAE5600A82848 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E764023DCAE5600A82848 /* API.swift */; };
@@ -41,8 +39,6 @@
 		1F35B54523DC9E3F000A013D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		1F4EB51723DCA21500C50E64 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		1F4EB51923DCA23C00C50E64 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
-		1F9E763723DCA75500A82848 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		1F9E763923DCA76500A82848 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		1F9E763C23DCA79300A82848 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		1F9E763E23DCAD6000A82848 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		1F9E764023DCAE5600A82848 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -114,7 +110,6 @@
 			children = (
 				1F35B53123DC9D34000A013D /* AppDelegate.swift */,
 				1F35B54723DC9E5F000A013D /* Services */,
-				1F9E763623DCA74500A82848 /* Feed */,
 				1F9E764723DCD1EE00A82848 /* NewsFeed */,
 				1F4EB51B23DCA26700C50E64 /* Auth */,
 				1F9E763B23DCA78100A82848 /* Helpers */,
@@ -144,15 +139,6 @@
 				1F4EB51923DCA23C00C50E64 /* AuthViewController.storyboard */,
 			);
 			path = Auth;
-			sourceTree = "<group>";
-		};
-		1F9E763623DCA74500A82848 /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				1F9E763723DCA75500A82848 /* FeedViewController.swift */,
-				1F9E763923DCA76500A82848 /* FeedViewController.storyboard */,
-			);
-			path = Feed;
 			sourceTree = "<group>";
 		};
 		1F9E763B23DCA78100A82848 /* Helpers */ = {
@@ -260,7 +246,6 @@
 				1F9E765C23DCE1C200A82848 /* NewsFeedCell.xib in Resources */,
 				1F4EB51A23DCA23C00C50E64 /* AuthViewController.storyboard in Resources */,
 				1F35B53B23DC9D36000A013D /* Assets.xcassets in Resources */,
-				1F9E763A23DCA76500A82848 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +304,6 @@
 				1F9E763D23DCA79300A82848 /* UIViewController + Storyboard.swift in Sources */,
 				1F9E765423DCD23200A82848 /* NewsFeedInteractor.swift in Sources */,
 				1F35B53223DC9D34000A013D /* AppDelegate.swift in Sources */,
-				1F9E763823DCA75500A82848 /* FeedViewController.swift in Sources */,
 				1F9E763F23DCAD6000A82848 /* NetworkService.swift in Sources */,
 				1F9E764623DCBFE100A82848 /* NetworkDataFetcher.swift in Sources */,
 				1F9E765023DCD23200A82848 /* NewsFeedWorker.swift in Sources */,
