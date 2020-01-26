@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 protocol FeedCellViewModel {
-    var iconUrlString:String? { get }
+    
+    var iconUrlString:String { get }
     var name: String { get }
     var date: String { get }
     var text: String? { get }
@@ -18,13 +19,26 @@ protocol FeedCellViewModel {
     var comments: String? { get }
     var shares: String? { get }
     var views: String? { get }
+    var photoAttachment: FeedCellPhotoAttechmentViewModel? { get }
+}
+
+protocol FeedCellPhotoAttechmentViewModel {
+    var photoUrlString: String? { get }
+    var width: Int { get }
+    var height: Int { get }
 }
 
 class NewsFeedCell: UITableViewCell {
     
     static let reuseId = "NewsFeedCell"
     
-    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var iconImageView: WebImageView! {
+        didSet {
+            iconImageView.layer.cornerRadius = iconImageView.frame.width / 2.0
+            iconImageView.clipsToBounds = true
+        }
+    }
+    @IBOutlet weak var postImageView: WebImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var postLabel: UILabel!
@@ -35,9 +49,11 @@ class NewsFeedCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
     }
     
     func set(viewModel: FeedCellViewModel) {
+        iconImageView.set(imageUrl: viewModel.iconUrlString)
         nameLabel.text = viewModel.name
         dateLabel.text = viewModel.date
         postLabel.text = viewModel.text
@@ -45,5 +61,12 @@ class NewsFeedCell: UITableViewCell {
         commentsLabel.text = viewModel.comments
         sharesLabel.text = viewModel.shares
         viewsLabel.text = viewModel.views
+        
+        if let photoAttachment = viewModel.photoAttachment {
+            postImageView.set(imageUrl: photoAttachment.photoUrlString)
+            postImageView.isHidden = false
+        } else {
+            postImageView.isHidden = true
+        }
     }
 }
