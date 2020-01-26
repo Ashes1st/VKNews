@@ -132,7 +132,7 @@
                 <outlet property="dateLabel" destination="fGK-lT-Ikc" id="gTd-wS-M0Y"/>
                 <outlet property="iconImageView" destination="v3a-zT-n3T" id="fRM-tU-WxO"/>
                 <outlet property="likesLabel" destination="H6E-ZN-lSh" id="dla-GK-Tki"/>
-                <outlet property="nameLabel" destination="fGK-lT-Ikc" id="c9i-SN-Kei"/>
+                <outlet property="nameLabel" destination="xTW-la-2kZ" id="Uy7-GQ-6W3"/>
                 <outlet property="postLabel" destination="lig-7b-tYZ" id="vqE-ew-Mff"/>
                 <outlet property="sharesLabel" destination="7t1-c1-j4s" id="sxm-PE-JvJ"/>
                 <outlet property="viewsLabel" destination="TPb-nh-Qac" id="xqB-Jb-Cpv"/>
