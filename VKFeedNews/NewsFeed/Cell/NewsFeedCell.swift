@@ -38,6 +38,12 @@ class NewsFeedCell: UITableViewCell {
             iconImageView.clipsToBounds = true
         }
     }
+    @IBOutlet weak var cardView: UIView! {
+        didSet {
+            cardView.layer.cornerRadius = 10
+            cardView.clipsToBounds = true
+        }
+    }
     @IBOutlet weak var postImageView: WebImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -50,6 +56,8 @@ class NewsFeedCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        backgroundColor = .clear
+        selectionStyle = .none
     }
     
     func set(viewModel: FeedCellViewModel) {
