@@ -8,19 +8,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="277" id="kfb-2M-OGe" customClass="NewsFeedCell" customModule="VKFeedNews" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="516" height="277"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="300" id="kfb-2M-OGe" customClass="NewsFeedCell" customModule="VKFeedNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="508" height="300"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kfb-2M-OGe" id="UKI-vg-29X" customClass="NewsFeedCell" customModule="VKFeedNews" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="516" height="277"/>
+                <rect key="frame" x="0.0" y="0.0" width="508" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGW-Nb-uec" userLabel="Card View">
-                        <rect key="frame" x="14" y="0.0" width="489" height="264"/>
+                        <rect key="frame" x="8" y="0.0" width="492" height="287"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lig-7b-tYZ">
-                                <rect key="frame" x="8" y="68" width="473" height="86"/>
+                                <rect key="frame" x="8" y="68" width="476" height="109"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uxn-TR-U73" userLabel="Bottom View">
-                                <rect key="frame" x="0.0" y="214" width="489" height="50"/>
+                                <rect key="frame" x="0.0" y="237" width="492" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKi-bi-8An">
@@ -68,7 +68,7 @@
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSm-xL-vcc">
-                                        <rect key="frame" x="399" y="0.0" width="90" height="50"/>
+                                        <rect key="frame" x="402" y="0.0" width="90" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eye.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Obz-zr-Mzv">
@@ -107,11 +107,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENd-DK-KDM" customClass="WebImageView" customModule="VKFeedNews" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="162" width="489" height="52"/>
+                                <rect key="frame" x="0.0" y="185" width="492" height="52"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vte-qx-4gg" userLabel="Top View">
-                                <rect key="frame" x="8" y="5" width="473" height="55"/>
+                                <rect key="frame" x="8" y="5" width="476" height="55"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3a-zT-n3T" customClass="WebImageView" customModule="VKFeedNews" customModuleProvider="target">
@@ -120,14 +120,14 @@
                                         <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTW-la-2kZ">
-                                        <rect key="frame" x="63" y="4" width="402" height="23"/>
+                                        <rect key="frame" x="63" y="4" width="405" height="23"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGK-lT-Ikc">
-                                        <rect key="frame" x="63" y="31" width="402" height="20"/>
+                                        <rect key="frame" x="63" y="31" width="405" height="20"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -142,6 +142,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="bottomView" destination="Uxn-TR-U73" id="Dax-SF-Fa4"/>
                 <outlet property="cardView" destination="eGW-Nb-uec" id="RUQ-k1-20T"/>
                 <outlet property="commentsLabel" destination="MVx-VQ-g6b" id="Jho-Ir-mOP"/>
                 <outlet property="dateLabel" destination="fGK-lT-Ikc" id="gTd-wS-M0Y"/>
@@ -153,7 +154,7 @@
                 <outlet property="sharesLabel" destination="7t1-c1-j4s" id="sxm-PE-JvJ"/>
                 <outlet property="viewsLabel" destination="TPb-nh-Qac" id="xqB-Jb-Cpv"/>
             </connections>
-            <point key="canvasLocation" x="-337.68115942028987" y="118.86160714285714"/>
+            <point key="canvasLocation" x="-343.47826086956525" y="126.5625"/>
         </tableViewCell>
     </objects>
     <resources>
