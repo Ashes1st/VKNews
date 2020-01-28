@@ -62,9 +62,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthServiceDelegate {
     
     func authServiceSignIn() {
         print(#function)
-        let feedVC: NewsFeedViewController = NewsFeedViewController.loadFromStoryboard()
-        let tabBarVC: UITabBarController = UITabBarController()
-        tabBarVC.setViewControllers([feedVC], animated: true)
+        
+        let tabBarVC: TabBarViewController = TabBarViewController()
         
         window?.rootViewController = tabBarVC
     }

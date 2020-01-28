@@ -57,7 +57,6 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
         print(#function)
         if result.token != nil {
-            print(result.token)
             delegate?.authServiceSignIn()
         }
     }

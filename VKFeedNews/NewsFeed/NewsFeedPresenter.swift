@@ -37,7 +37,7 @@ class NewsFeedPresenter: NewsFeedPresentationLogic {
         }
     }
     
-    private func cellViewModel(from feedItem: FeedItem, profiles: [Profile], groups: [Group]) -> FeedViewModel.Cell {
+    private func cellViewModel(from feedItem: FeedItem, profiles: [ProfileResponse], groups: [Group]) -> FeedViewModel.Cell {
         
         let profile = self.profile(for: feedItem.sourceId, profiles: profiles, groups: groups)
         
@@ -60,8 +60,8 @@ class NewsFeedPresenter: NewsFeedPresentationLogic {
                                        sizes: sizes)
     }
     
-    private func profile(for sourseId: Int, profiles: [Profile], groups: [Group]) -> ProfileRepresentable {
-        let profilesOrGroups: [ProfileRepresentable] = sourseId >= 0 ? profiles : groups
+    private func profile(for sourseId: Int, profiles: [ProfileResponse], groups: [Group]) -> ProfileResponseRepresentable {
+        let profilesOrGroups: [ProfileResponseRepresentable] = sourseId >= 0 ? profiles : groups
         
         let normalSourseId = sourseId >= 0 ? sourseId : -sourseId
         

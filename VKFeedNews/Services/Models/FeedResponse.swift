@@ -14,7 +14,7 @@ struct FeedResponseWrapped: Decodable {
 
 struct FeedResponse: Decodable {
     var items: [FeedItem]
-    var profiles: [Profile]
+    var profiles: [ProfileResponse]
     var groups: [Group]
 }
 
@@ -72,13 +72,13 @@ struct CountableItem: Decodable {
     let count: Int
 }
 
-protocol ProfileRepresentable {
+protocol ProfileResponseRepresentable {
     var id: Int { get }
     var name: String { get }
     var photo: String { get }
 }
 
-struct Profile: Decodable, ProfileRepresentable {
+struct ProfileResponse: Decodable, ProfileResponseRepresentable {
     let id: Int
     let firstName: String
     let lastName: String
@@ -89,7 +89,7 @@ struct Profile: Decodable, ProfileRepresentable {
     var photo: String { return photo100}
 }
 
-struct Group: Decodable, ProfileRepresentable {
+struct Group: Decodable, ProfileResponseRepresentable {
     let id: Int
     let name: String
     let photo100: String
